@@ -5,7 +5,16 @@
 
 }
 
-#title {
+/* #title {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: white;
+} */
+
+#logo {
+  width: 15em;
+  height: auto;		
+  margin-left: 2em;
+  margin-top: 1em;
 }
