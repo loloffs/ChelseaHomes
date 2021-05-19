@@ -1,0 +1,10 @@
+.heading {
+  display: flex;
+  justify-content: left;
+  color: red;
+}
+
+.subheading {
+  color: red;
+  opacity: .7;
+}
