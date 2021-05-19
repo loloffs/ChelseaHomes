@@ -23,6 +23,7 @@
   justify-content: space-around;
   width: 100%;
   opacity: .9;
+  text-decoration: none;
 }
 
 .button:hover {
