@@ -1,10 +1,14 @@
 .heading {
   display: flex;
   justify-content: left;
-  color: red;
+  color: grey;
+  font-family: 'Helvetica neue';
+  font-weight: 200;
 }
 
 .subheading {
-  color: red;
+  color: grey;
   opacity: .7;
+  font-family: 'Helvetica neue';
+  font-weight: 400;
 }

@@ -9,7 +9,7 @@
 
 .button {
   color: white;
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: .1em;
   border: none;
   background-color: inherit;
@@ -17,7 +17,7 @@
   margin-bottom: .5em;
   padding: 0;
   font-size: 1.1em;
-  font-family: 'Cinzel', serif;
+  font-family: 'Helvetica neue';
   cursor: pointer;
   display: flex;
   justify-content: space-around;
