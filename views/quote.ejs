@@ -17,10 +17,22 @@
     <h1 class="heading" type="text">Thank you for your interest in Chelsea Homes.</h1>
     <h3 class="subheading" type="text">Please fill in the relevant information and description of the project details.</h3>
 
-    <form id="quoteForm">
-      <h3 class="quoteFormSubHeading"></h3>
-      <input placeholder="First Name">
-      <input placeholder="Last Name">
+    <form>
+      <div class="nameQuote">
+        <input class="quoteInput" placeholder="First Name">
+        <input class="quoteInput" placeholder="Last Name">
+      </div>
+      <div class="contactQuote">
+        <input class="quoteInput" placeholder="Email">
+        <input class="quoteInput" placeholder="Phone Number">
+      </div>
+      <div class="siteAddress">
+        <input id="siteAddressInput" placeholder="Site Address (optional)">
+      </div>
+      <div>
+        <input class="checkboxOptions" type="checkbox" name="reno" value="Bike"> Renovation<br>
+        <input class="checkboxOptions" type="checkbox" name="new" value="Car"> New Build<br>       
+      </div>
     </form>
 
   </body>
