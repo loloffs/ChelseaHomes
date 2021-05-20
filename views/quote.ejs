@@ -18,20 +18,24 @@
     <h3 class="subheading" type="text">Please fill in the relevant information and description of the project details.</h3>
 
     <form>
-      <div class="nameQuote">
+      <div id="nameQuote">
         <input class="quoteInput" placeholder="First Name">
         <input class="quoteInput" placeholder="Last Name">
       </div>
-      <div class="contactQuote">
+      <div id="contactQuote">
         <input class="quoteInput" placeholder="Email">
         <input class="quoteInput" placeholder="Phone Number">
       </div>
       <div class="siteAddress">
         <input id="siteAddressInput" placeholder="Site Address (optional)">
       </div>
+      <div id="checkBoxes">
+        <input class="checkboxOptions" type="checkbox" name="reno" value="reno"> Renovation<br>
+        <input class="checkboxOptions" type="checkbox" name="new" value="new"> New Build<br>       
+        <input class="checkboxOptions" type="checkbox" name="new" value="other"> Other<br>       
+      </div>
       <div>
-        <input class="checkboxOptions" type="checkbox" name="reno" value="Bike"> Renovation<br>
-        <input class="checkboxOptions" type="checkbox" name="new" value="Car"> New Build<br>       
+        <input id="projectDescription" rows="4" cols="50" placeholder="Describe the project in detail"></input>
       </div>
     </form>
 
