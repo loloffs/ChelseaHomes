@@ -20,12 +20,12 @@ app.get('/gallery', (req, res) => {
   res.render('gallery');
 });
 
-app.get('/quote', (req, res) => {
-  res.render('quote');
-});
-
 app.get('/contact', (req, res) => {
   res.render('contact');
+});
+
+app.get('/process', (req, res) => {
+  res.render('process');
 });
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

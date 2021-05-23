@@ -4,16 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chelsea Homes Kelowna</title>
 
   <!-- Styles -->
+  <link rel="stylesheet" href="/main.css" type="text/css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon"> 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
 
-
-  <title>Document</title>
 </head>
-<body>
-  <%- include('partials/_header') %>
-  Contact
-</body>
+  <body>
+    <%- include('partials/_header') %>
+    <h1 class="heading" type="text">Thank you for your interest in Chelsea Homes.</h1>
+    <h3 class="subheading" type="text">Please fill in the relevant information and description of the project details.</h3>
+
+    <form>
+      <div id="nameQuote">
+        <input class="quoteInput" placeholder="First Name">
+        <input class="quoteInput" placeholder="Last Name">
+      </div>
+      <div id="contactQuote">
+        <input class="quoteInput" placeholder="Email">
+        <input class="quoteInput" placeholder="Phone Number">
+      </div>
+      <div class="siteAddress">
+        <input id="siteAddressInput" placeholder="Site Address (optional)">
+      </div>
+      <div id="checkBoxes">
+        <input class="checkboxOptions" type="checkbox" name="new" value="new"> New Build<br>
+        <input class="checkboxOptions" type="checkbox" name="reno" value="reno"> Renovation<br>       
+        <input class="checkboxOptions" type="checkbox" name="other" value="other"> Other<br>       
+      </div>
+      <div>
+        <textarea id="projectDescription" rows="4" cols="50" placeholder="Describe the project in detail"></textarea>
+      </div>
+      <div id="dropdownMenu">
+        <label class="subheading" for="referral">How did you hear about Chelsea Homes?</label>
+        <select id="dropdown" name="choices" >
+          <option value="" disabled selected hidden>Select</option>
+          <option value="client">Existing Client</option>
+          <option value="wom">Word of Mouth</option>
+          <option value="google">Google Search</option>
+          <option value="Other">Other</option>
+        </select>
+        <input id="dropdownButton" type="submit" value="Request a Quote">
+      </div>
+    </form>
+
+  </body>
 </html>
