@@ -115,10 +115,16 @@
   font-family: 'Helvetica neue';
 }
 
-.mainPg {
+#container {
   display: flex;
   justify-content: center;
+}
 
+#mainTxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #mainImg {
