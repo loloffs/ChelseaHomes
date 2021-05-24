@@ -12,8 +12,8 @@ app.get('', (req, res) => {
   res.render('index');
 });
 
-app.get('/about', (req, res) => {
-  res.render('about');
+app.get('/team', (req, res) => {
+  res.render('team');
 });
 
 app.get('/gallery', (req, res) => {
