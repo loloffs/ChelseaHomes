@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  opacity: .8;
+  opacity: .7;
   text-decoration: none;
   scroll-behavior: smooth; /* ????? */
 }
@@ -69,17 +69,23 @@
 }
 
 #homeButton {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-direction: row;
 
-  justify-content: flex-start;
-  color: white;
+  /* justify-content: flex-start; */
   align-self: center;
+
 
 } 
 
+#homeButton:hover {
+  opacity: 0.5;
+}
+
 #smallLogo {
+  /* display: flex; */
+  /* justify-self:left; */
   width: 1.5em;
   height: auto;
 }
