@@ -137,3 +137,27 @@
 #contactForm {
   margin-left: 2.5em;
 }
+
+#hookText {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  font-family: 'Cinzel';
+}
+
+/* 
+#containerTwo {
+
+} */
+
+.accentShots {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.splitPics {
+  padding: .2em;
+  width: 37em;
+  height: auto;
+}
