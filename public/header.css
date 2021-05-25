@@ -48,9 +48,10 @@
 #btns {
   display: flex;
   align-self: center;
-  width: 70%;
+  width: 80%;
   flex-direction: row;
-  justify-content: space-around;
+  /* justify-content: space-evenly; */
+
 }
 
 #menuItems {
@@ -66,6 +67,18 @@
   background-color: #2c5370;
 }
 
-/* #homeButton {
+#homeButton {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
 
-} */
+  justify-content: flex-start;
+  color: white;
+  align-self: center;
+
+} 
+
+#smallLogo {
+  width: 1.5em;
+  height: auto;
+}
