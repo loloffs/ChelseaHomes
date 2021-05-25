@@ -34,6 +34,7 @@
   width: 100%;
   opacity: .8;
   text-decoration: none;
+  scroll-behavior: smooth; /* ????? */
 }
 
 .button:hover {
