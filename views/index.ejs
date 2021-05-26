@@ -12,6 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
   <link href="http://fonts.cdnfonts.com/css/chapaza" rel="stylesheet">
 
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   
   <title>Chelsea Homes Kelowna</title>
 </head>
@@ -49,20 +52,20 @@
         name=”EmailForm”
         >
         <div id="nameQuote">
-          <input class="quoteInput" name="firstName" placeholder="First Name">
-          <input class="quoteInput" name="lastName" placeholder="Last Name">
+          <input id="firstName" class="quoteInput" name="firstName" placeholder="First Name">
+          <input id="lastName" class="quoteInput" name="lastName" placeholder="Last Name">
         </div>
         <div id="contactQuote">
-          <input class="quoteInput" name="email" placeholder="Email">
-          <input class="quoteInput" name="phone" placeholder="Phone Number">
+          <input id="email" class="quoteInput" name="email" placeholder="Email">
+          <input id="phone" class="quoteInput" name="phone" placeholder="Phone Number">
         </div>
         <div class="siteAddress">
           <input id="siteAddressInput" name="address" placeholder="Site Address (optional)">
         </div>
         <div id="checkBoxes">
-          <input class="checkboxOptions" type="checkbox" name="new" value="new"> New Build<br>
-          <input class="checkboxOptions" type="checkbox" name="reno" value="reno"> Renovation<br>       
-          <input class="checkboxOptions" type="checkbox" name="other" value="other"> Other<br>       
+          <input id="new" class="checkboxOptions" type="checkbox" name="new" value="new"> New Build<br>
+          <input id="reno" class="checkboxOptions" type="checkbox" name="reno" value="reno"> Renovation<br>       
+          <input id="other" class="checkboxOptions" type="checkbox" name="other" value="other"> Other<br>       
         </div>
         <div>
           <textarea id="projectDescription" name="projectDescription" rows="4" cols="50" placeholder="Describe the project in detail"></textarea>
@@ -92,10 +95,37 @@
       </div>
   </div>
 
-  
   <footer>
     <%- include('partials/_footer') %>
   </footer>
+
+  <script>
+    $('form').on('submit', (e) => {
+      e.preventDefault();
+
+      const firstName = $('#firstName').val().trim();
+      const lastName = $('#lastName').val().trim();
+      const email = $('#email').val().trim();
+      const phone = $('#phone').val().trim();
+      const address = $('#siteAddressInput').val().trim();
+      const description = $('#projectDescription').val().trim();
+
+      const data = {
+        firstName,
+        lastName,
+        email,
+        phone,
+        address,
+        description
+      };
+
+      $.post('/emailForm', data, () => {
+        console.log("Server recieved our data!")
+      });
+
+
+    })
+  </script>
 
 </body>
 </html>

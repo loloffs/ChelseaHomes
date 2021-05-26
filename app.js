@@ -8,6 +8,21 @@ app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/img', express.static(__dirname + 'public/img'))
 app.set('view engine', 'ejs')
 
+
+
+// Data parsing... do I need path?
+app.use(express.urlencoded({
+  extended: false 
+}));
+
+app.use(express.json());
+
+app.post('/emailForm', (req, res) => {
+  // send email here
+  console.log("Data: ", req.body);
+  res.json({ message: 'Message recieved!' })
+});
+
 app.get('', (req, res) => {
   res.render('index');
 });
