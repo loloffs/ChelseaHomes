@@ -41,17 +41,22 @@
     <div id="contactForm">
       <h1 class="heading" type="text">Thank you for your interest in Chelsea Homes.</h1>
       <h3 class="subheading" type="text">Please fill in the relevant information and description of the project details.</h3>  
-      <form>
+      <form 
+        action=”mailto:lukeoloffs@gmail.com” 
+        method="POST" 
+        enctype=”multipart/form-data”
+        name=”EmailForm”
+        >
         <div id="nameQuote">
-          <input class="quoteInput" placeholder="First Name">
-          <input class="quoteInput" placeholder="Last Name">
+          <input class="quoteInput" name="firstName" placeholder="First Name">
+          <input class="quoteInput" name="lastName" placeholder="Last Name">
         </div>
         <div id="contactQuote">
-          <input class="quoteInput" placeholder="Email">
-          <input class="quoteInput" placeholder="Phone Number">
+          <input class="quoteInput" name="email" placeholder="Email">
+          <input class="quoteInput" name="phone" placeholder="Phone Number">
         </div>
         <div class="siteAddress">
-          <input id="siteAddressInput" placeholder="Site Address (optional)">
+          <input id="siteAddressInput" name="address" placeholder="Site Address (optional)">
         </div>
         <div id="checkBoxes">
           <input class="checkboxOptions" type="checkbox" name="new" value="new"> New Build<br>
@@ -59,7 +64,7 @@
           <input class="checkboxOptions" type="checkbox" name="other" value="other"> Other<br>       
         </div>
         <div>
-          <textarea id="projectDescription" rows="4" cols="50" placeholder="Describe the project in detail"></textarea>
+          <textarea id="projectDescription" name="projectDescription" rows="4" cols="50" placeholder="Describe the project in detail"></textarea>
         </div>
         <div id="dropdownMenu">
           <h3 class="subheading" type="text">How did you hear about Chelsea Homes?</h3>
@@ -70,7 +75,7 @@
             <option value="google">Google Search</option>
             <option value="Other">Other</option>
           </select>
-          <input id="dropdownButton" type="submit" value="Submit">
+          <input id="dropdownButton" name="dropdown" type="submit" value="Submit">
         </div>
       </form>
     </div>
