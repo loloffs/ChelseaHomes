@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
+const sendMail = require('./mail');
 
 app.use(express.static('public'))
 app.use('/css', express.static(__dirname + 'public/css'))
@@ -20,7 +21,16 @@ app.use(express.json());
 app.post('/emailForm', (req, res) => {
   // send email here
   console.log("Data: ", req.body);
-  res.json({ message: 'Message recieved!' })
+
+  const { firstName, lastName, email, phone, address, description } = req.body;
+
+  sendMail(firstName, lastName, email, phone, address, description, (err, data) => {
+    if (err) {
+      res.status(500).json({ message: "Internal error" });
+    } else {
+      res.json({ message: "Message sent!" })
+    }
+  })
 });
 
 app.get('', (req, res) => {

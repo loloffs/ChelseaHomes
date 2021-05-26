@@ -45,7 +45,6 @@
       <h1 class="heading" type="text">Thank you for your interest in Chelsea Homes.</h1>
       <h3 class="subheading" type="text">Please fill in the relevant information and description of the project details.</h3>  
       <form
-        action=”mailto:lukeoloffs@gmail.com”
         action="/app.js"
         method="POST"
         enctype=”multipart/form-data”
@@ -122,8 +121,6 @@
       $.post('/emailForm', data, () => {
         console.log("Server recieved our data!")
       });
-
-
     })
   </script>
 
