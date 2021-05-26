@@ -13,7 +13,7 @@ const auth = {
 const transporter = nodemailer.createTransport(mailGun(auth));
 
 const mailOptions = {
-  from: '',
+  from: 'lukeoloffs@gmail.com',
   to: 'chelseahomeskelowna@gmail.com',
   subject: 'Chelsea Homes Website Inquiry',
   text: 'I am testing the email feature'
