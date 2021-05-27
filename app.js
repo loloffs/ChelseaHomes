@@ -10,23 +10,23 @@ app.use('/img', express.static(__dirname + 'public/img'))
 app.set('view engine', 'ejs')
 
 
-
 // Data parsing... do I need path?
 app.use(express.urlencoded({
   extended: false 
 }));
-
 app.use(express.json());
 
 app.post('/emailForm', (req, res) => {
   // send email here
-  console.log("Data: ", req.body);
+  console.log("Data: app.js line 21", req.body);
 
   const { firstName, lastName, email, phone, address, description } = req.body;
 
   sendMail(firstName, lastName, email, phone, address, description, function(err, data) {
+    console.log("Data: app.js line 26", data);
     if (err) {
-      res.status(500).json({ message: "Internal error" });
+      console.log("Err: app.js line 28", err);
+      res.json(err.details);
     } else {
       res.json({ message: "Message sent!" })
     }
