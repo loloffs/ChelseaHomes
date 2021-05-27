@@ -25,7 +25,7 @@ app.post('/emailForm', (req, res) => {
   sendMail(firstName, lastName, email, phone, address, description, function(err, data) {
     console.log("Data: app.js line 26", data);
     if (err) {
-      console.log("Err: app.js line 28", err);
+      console.log("Err.details: app.js line 28", err.details);
       res.json(err.details);
     } else {
       res.json({ message: "Message sent!" })
