@@ -24,7 +24,7 @@ app.post('/emailForm', (req, res) => {
 
   const { firstName, lastName, email, phone, address, description } = req.body;
 
-  sendMail(firstName, lastName, email, phone, address, description, (err, data) => {
+  sendMail(firstName, lastName, email, phone, address, description, function(err, data) {
     if (err) {
       res.status(500).json({ message: "Internal error" });
     } else {

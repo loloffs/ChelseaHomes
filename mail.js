@@ -25,7 +25,7 @@ const sendMail = function(firstName, lastName, email, phone, address, descriptio
     description
   };
   
-  transporter.sendMail(mailOptions, (err, data) => {
+  transporter.sendMail(mailOptions, function(err, data) {
     if (err) {
       cb(err, null);
     } else {
