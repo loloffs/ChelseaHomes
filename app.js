@@ -21,14 +21,18 @@ app.post('/email', (req, res) => {
   // send email here
   console.log("req.body: app.js line 21", req.body);
 
+  console.log("HERE: ", req.body);
+
+
   const { firstName, lastName, email, phone, address, description } = req.body;
 
   sendMail(firstName, lastName, email, phone, address, description, function(err, data) {
-    console.log("Data: app.js line 26", data);
+    // console.log("Data: app.js line 26", data);
     if (err) {
-      console.log("Err.details: app.js line 28", err.details);
+      console.log("Err.details: app.js line 28", err);
       res.json(err.details);
     } else {
+      console.log("Email sent!")
       res.json({ message: "Message sent!" })
     }
   })

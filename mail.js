@@ -15,14 +15,14 @@ const transporter = nodemailer.createTransport(mailGun(auth));
 
 const sendMail = function(firstName, lastName, email, phone, address, description, cb) {
   const mailOptions = {
+    from: email,
     to: 'chelseahomeskelowna@gmail.com',
     subject: 'Chelsea Homes Website Inquiry',
     firstName,
     lastName,
-    from: email,
     phone,
     address,
-    description
+    text: description
   };
   
   transporter.sendMail(mailOptions, function(err, data) {
