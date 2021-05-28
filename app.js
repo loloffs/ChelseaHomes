@@ -16,7 +16,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 
-app.post('/emailForm', (req, res) => {
+app.post('/email', (req, res) => {
   // send email here
   console.log("Data: app.js line 21", req.body);
 
