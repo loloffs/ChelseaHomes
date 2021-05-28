@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
+// const path = require('path');
 const sendMail = require('./mail');
 
 app.use(express.static('public'))
-app.use('/css', express.static(__dirname + 'public/css'))
-app.use('/js', express.static(__dirname + 'public/js'))
-app.use('/img', express.static(__dirname + 'public/img'))
+// app.use('/css', express.static(__dirname + 'public/css'))
+// app.use('/js', express.static(__dirname + 'public/js'))
+// app.use('/img', express.static(__dirname + 'public/img'))
 app.set('view engine', 'ejs')
 
 
@@ -18,7 +19,7 @@ app.use(express.json());
 
 app.post('/email', (req, res) => {
   // send email here
-  console.log("Data: app.js line 21", req.body);
+  console.log("req.body: app.js line 21", req.body);
 
   const { firstName, lastName, email, phone, address, description } = req.body;
 

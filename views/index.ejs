@@ -99,6 +99,8 @@
   </footer>
 
   <script>
+
+  $(document).ready(function(){
     $('form').on('submit', (e) => {
       e.preventDefault();
 
@@ -121,7 +123,8 @@
       $.post('/email', data, () => {
         console.log("Server recieved our data!")
       });
-    })
+    });
+  });
   </script>
 
 </body>
