@@ -208,3 +208,13 @@
   width: 37em;
   height: auto;
 }
+
+#allGalleryImages {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.galleryImage {
+  width: 90%;
+}
