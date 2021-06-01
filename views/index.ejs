@@ -19,84 +19,88 @@
   <title>Chelsea Homes Kelowna</title>
 </head>
 <body>
-  <header>
-    <%- include('partials/_header') %>
-  </header>
+  <!-- <div id="mainContainer"> -->
 
-  <div id="container">
-    <img id="mainImg" src="/img/KelownaViews.jpg">
-    <img id="mainLogo" src="/img/ChelseaHomesMainLogo.png">
-  </div>
+    <header>
+      <%- include('partials/_header') %>
+    </header>
 
-  <div id="containerTwo">
-    <div>
-      <p id="hookText">CREATE YOUR DREAM HOME</p>
+    <div id="container">
+      <img id="mainImg" src="/img/KelownaViews.jpg">
+      <img id="mainLogo" src="/img/ChelseaHomesMainLogo.png">
     </div>
 
-    <div class="accentShots">
-      <img class="splitPics" src="/img/KelownaVineyard.jpg">
-      <img class="splitPics" src="/img/DowntownKelowna.jpg">
-    </div>
-  </div>
-
-
-  <div id="contactQuoteContainer">
-    <div id="contactForm">
-      <h1 class="heading" type="text">Thank you for your interest in Chelsea Homes.</h1>
-      <h3 class="subheading" type="text">Please fill in the relevant information and description of the project details.</h3>  
-      <form
-        action="/app.js"
-        method="POST"
-        enctype=”multipart/form-data”
-        name=”EmailForm”
-        >
-        <div id="nameQuote">
-          <input id="firstName" class="quoteInput" name="firstName" placeholder="First Name">
-          <input id="lastName" class="quoteInput" name="lastName" placeholder="Last Name">
-        </div>
-        <div id="contactQuote">
-          <input id="email" class="quoteInput" name="email" placeholder="Email">
-          <input id="phone" class="quoteInput" name="phone" placeholder="Phone Number">
-        </div>
-        <div class="siteAddress">
-          <input id="siteAddressInput" name="address" placeholder="Site Address (optional)">
-        </div>
-        <div id="checkBoxes">
-          <input id="new" class="checkboxOptions" type="checkbox" name="new" value="new"> New Build<br>
-          <input id="reno" class="checkboxOptions" type="checkbox" name="reno" value="reno"> Renovation<br>       
-          <input id="other" class="checkboxOptions" type="checkbox" name="other" value="other"> Other<br>       
-        </div>
-        <div>
-          <textarea id="projectDescription" name="projectDescription" rows="4" cols="50" placeholder="Describe the project in detail"></textarea>
-        </div>
-        <div id="dropdownMenu">
-          <h3 class="subheading" type="text">How did you hear about Chelsea Homes?</h3>
-          <select id="dropdown" name="choices" >
-            <option value="" disabled selected hidden>Select</option>
-            <option value="client">Existing Client</option>
-            <option value="wom">Word of Mouth</option>
-            <option value="google">Google Search</option>
-            <option value="Other">Other</option>
-          </select>
-          <input id="dropdownButton" name="dropdown" type="submit" value="Submit">
-        </div>
-      </form>
-    </div>
-      <div id="inspiringQuote">
-        <blockquote class="blockquote">
-            The Chelsea Homes team made the entire process of building our dream home a breeze. Their humility and willingess to listen to our needs and what we were looking for was second to none.
-          <footer id="footer">
-              <cite id="cite">
-                Luke Oloffs
-              </cite>
-          </footer>
-        </blockquote>
+    <div id="containerTwo">
+      <div>
+        <p id="hookText">CREATE YOUR DREAM HOME</p>
       </div>
-  </div>
 
-  <footer>
-    <%- include('partials/_footer') %>
-  </footer>
+      <div class="accentShots">
+        <img class="splitPics" src="/img/KelownaVineyard.jpg">
+        <img class="splitPics" src="/img/DowntownKelowna.jpg">
+      </div>
+    </div>
+
+
+    <div id="contactQuoteContainer">
+      <div id="contactForm">
+        <h1 class="heading" type="text">Thank you for your interest in Chelsea Homes.</h1>
+        <h3 class="subheading" type="text">Please fill in the relevant information and description of the project details.</h3>  
+        <form
+          action="/app.js"
+          method="POST"
+          enctype=”multipart/form-data”
+          name=”EmailForm”
+          >
+          <div id="nameQuote">
+            <input id="firstName" class="quoteInput" name="firstName" placeholder="First Name">
+            <input id="lastName" class="quoteInput" name="lastName" placeholder="Last Name">
+          </div>
+          <div id="contactQuote">
+            <input id="email" class="quoteInput" name="email" placeholder="Email">
+            <input id="phone" class="quoteInput" name="phone" placeholder="Phone Number">
+          </div>
+          <div class="siteAddress">
+            <input id="siteAddressInput" name="address" placeholder="Site Address (optional)">
+          </div>
+          <div id="checkBoxes">
+            <input id="new" class="checkboxOptions" type="checkbox" name="new" value="new"> New Build<br>
+            <input id="reno" class="checkboxOptions" type="checkbox" name="reno" value="reno"> Renovation<br>       
+            <input id="other" class="checkboxOptions" type="checkbox" name="other" value="other"> Other<br>       
+          </div>
+          <div>
+            <textarea id="projectDescription" name="projectDescription" rows="4" cols="50" placeholder="Describe the project in detail"></textarea>
+          </div>
+          <div id="dropdownMenu">
+            <h3 class="subheading" type="text">How did you hear about Chelsea Homes?</h3>
+            <select id="dropdown" name="choices" >
+              <option value="" disabled selected hidden>Select</option>
+              <option value="client">Existing Client</option>
+              <option value="wom">Word of Mouth</option>
+              <option value="google">Google Search</option>
+              <option value="Other">Other</option>
+            </select>
+            <input id="dropdownButton" name="dropdown" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+        <div id="inspiringQuote">
+          <blockquote class="blockquote">
+              The Chelsea Homes team made the entire process of building our dream home a breeze. Their humility and willingess to listen to our needs and what we were looking for was second to none.
+            <footer id="footer">
+                <cite id="cite">
+                  Luke Oloffs
+                </cite>
+            </footer>
+          </blockquote>
+        </div>
+    </div>
+
+    <footer>
+      <%- include('partials/_footer') %>
+    </footer>
+
+  <!-- </div> -->
 
   <script>
 
