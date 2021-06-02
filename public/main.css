@@ -5,6 +5,10 @@
   justify-content: center;
 } */
 
+* {
+  scroll-behavior: smooth;
+}
+
 .heading {
   display: flex;
   justify-content: left;
