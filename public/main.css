@@ -225,3 +225,18 @@
 .galleryImage {
   width: 90%;
 }
+
+#theTeamImgs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* width: .1em; */
+  /* height: auto; */
+}
+
+.teamImg {
+  width: 19em;
+  height: auto;
+
+}
