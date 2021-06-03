@@ -235,6 +235,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 1em;
   /* width: .1em; */
   /* height: auto; */
 }
@@ -243,4 +244,13 @@
   width: 19em;
   height: auto;
 
+}
+
+#teamHeading {
+  display: flex;
+  justify-content: center;
+  color: grey;
+  font-family: 'Helvetica neue';
+  font-weight: 200;
+  margin-top: 1em;
 }
