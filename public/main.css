@@ -144,7 +144,7 @@
 }
 
 #mainImg {
-  margin-top: 4px;
+  /* margin-top: 4px; */
   width: 90%;
 }
 
@@ -215,6 +215,18 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  visibility: hidden;
+}
+
+.fadeIn {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  visibility: visible !important;
+}
+
+@keyframes animat_show{
+  0%{opacity:0}
+  100%{opacity:1}
 }
 
 .splitPics {
