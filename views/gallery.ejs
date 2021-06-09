@@ -22,7 +22,7 @@
 
     <div class="row">
       <div class="column">
-        <img class="individualImg" onClick="bigger();" src="/img/lakevale.jpg">
+        <img class="testing" onClick="bigger();" src="/img/lakevale.jpg"> 
         <img class="individualImg" onClick="bigger();" src="/img/KelownaVineyard.jpg">
         <img class="individualImg" onClick="bigger();" src="/img/Kelowna.jpeg">
         <img class="individualImg" onClick="bigger();" src="/img/KelownaBoardwalk.jpg">
@@ -58,15 +58,10 @@
 
 
     <script>
-      // or you can use jquery to make it bigger, like this
-
-      // <img class="img" src="something" onClick="bigger();"/>
-
-      // and the jquery
 
       const bigger = function(){
-        $('.individualImg').css("width","70%");
-        $('.individualImg').css("height","70%");
+        $('.testing').css("width","150%"); // incorrect class on line 25
+        // $('.testing').css("height","70%");
       }
 
 
