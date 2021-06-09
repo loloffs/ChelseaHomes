@@ -342,8 +342,9 @@
   cursor: pointer;
 }
 
-.enlargedImg {
+.column .enlargedImg {
   width: 150%;
+  cursor: pointer;
 }
 
 
