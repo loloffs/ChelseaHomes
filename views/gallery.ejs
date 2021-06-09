@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="/main.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
     <title>Chelsea Homes Kelowna</title>
   </head>
   <body>
@@ -18,30 +22,30 @@
 
     <div class="row">
       <div class="column">
-        <img class="individualImg" src="/img/lakevale.jpg">
-        <img class="individualImg" src="/img/KelownaVineyard.jpg">
-        <img class="individualImg" src="/img/Kelowna.jpeg">
-        <img class="individualImg" src="/img/KelownaBoardwalk.jpg">
-        <img class="individualImg" src="/img/KelownaViews.jpg">
-        <img class="individualImg" src="/img/Henrik.jpeg">
-        <img class="individualImg" src="/img/Noah.jpeg">
+        <img class="individualImg" onClick="bigger();" src="/img/lakevale.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/KelownaVineyard.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/Kelowna.jpeg">
+        <img class="individualImg" onClick="bigger();" src="/img/KelownaBoardwalk.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/KelownaViews.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/Henrik.jpeg">
+        <img class="individualImg" onClick="bigger();" src="/img/Noah.jpeg">
       </div>
       <div class="column">
-        <img class="individualImg" src="/img/Henrik.jpeg">
-        <img class="individualImg" src="/img/KelownaVineyard.jpg">
-        <img class="individualImg" src="/img/Kelowna.jpeg">
-        <img class="individualImg" src="/img/KelownaBoardwalk.jpg">
-        <img class="individualImg" src="/img/lakevale.jpg">
-        <img class="individualImg" src="/img/KelownaViews.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/Henrik.jpeg">
+        <img class="individualImg" onClick="bigger();" src="/img/KelownaVineyard.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/Kelowna.jpeg">
+        <img class="individualImg" onClick="bigger();" src="/img/KelownaBoardwalk.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/lakevale.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/KelownaViews.jpg">
       </div>
       <div class="column">
-        <img class="individualImg" src="/img/lakevale.jpg">
-        <img class="individualImg" src="/img/KelownaVineyard.jpg">
-        <img class="individualImg" src="/img/Kelowna.jpeg">
-        <img class="individualImg" src="/img/KelownaBoardwalk.jpg">
-        <img class="individualImg" src="/img/KelownaViews.jpg">
-        <img class="individualImg" src="/img/Henrik.jpeg">
-        <img class="individualImg" src="/img/Noah.jpeg">
+        <img class="individualImg" onClick="bigger();" src="/img/lakevale.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/KelownaVineyard.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/Kelowna.jpeg">
+        <img class="individualImg" onClick="bigger();" src="/img/KelownaBoardwalk.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/KelownaViews.jpg">
+        <img class="individualImg" onClick="bigger();" src="/img/Henrik.jpeg">
+        <img class="individualImg" onClick="bigger();" src="/img/Noah.jpeg">
       </div>
      
     </div>
@@ -51,6 +55,24 @@
     </div> -->
 
     <%- include('partials/_footer') %>
+
+
+    <script>
+      // or you can use jquery to make it bigger, like this
+
+      // <img class="img" src="something" onClick="bigger();"/>
+
+      // and the jquery
+
+      const bigger = function(){
+        $('.individualImg').css("width","70%");
+        $('.individualImg').css("height","70%");
+      }
+
+
+
+    </script>
+
 
   </body>
 </html>
