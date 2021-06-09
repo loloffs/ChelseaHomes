@@ -100,8 +100,10 @@
   display: flex;
   flex-direction: row;
 
+
   /* justify-content: flex-start; */
   align-self: center;
+
 
 
 } 
@@ -113,6 +115,7 @@
 #smallLogo {
   /* display: flex; */
   /* justify-self:left; */
+
   width: 1.5em;
   height: auto;
 }
