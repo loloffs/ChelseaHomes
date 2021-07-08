@@ -22,30 +22,14 @@
 
     <div class="row">
       <div class="column">
-        <img class="individualImg" onClick="bigger();" src="/img/lakevale.jpg"> 
-        <img class="individualImg" onClick="bigger();" src="/img/KelownaVineyard.jpg">
-        <img class="individualImg" onClick="bigger();" src="/img/Kelowna.jpeg">
-        <img class="individualImg" onClick="bigger();" src="/img/KelownaBoardwalk.jpg">
-        <img class="individualImg" onClick="bigger();" src="/img/KelownaViews.jpg">
-        <img class="individualImg" onClick="bigger();" src="/img/Henrik.jpeg">
-        <img class="individualImg" onClick="bigger();" src="/img/Noah.jpeg">
+        <img class="individualImg" alt="Snow" src="/img/BalzerHouse.jpeg">
+        <img class="individualImg" alt="Snow" src="/img/balzerHomeFull.jpeg">
       </div>
       <div class="column">
-        <img class="individualImg" onClick="bigger();" src="/img/Henrik.jpeg">
-        <img class="individualImg" onClick="bigger();" src="/img/KelownaVineyard.jpg">
-        <img class="individualImg" onClick="bigger();" src="/img/Kelowna.jpeg">
-        <img class="individualImg" onClick="bigger();" src="/img/KelownaBoardwalk.jpg">
-        <img class="individualImg" onClick="bigger();" src="/img/lakevale.jpg">
-        <img class="individualImg" onClick="bigger();" src="/img/KelownaViews.jpg">
+        <img class="individualImg" alt="Snow" src="/img/balzerHomeFrontJPG.jpeg">
       </div>
       <div class="column">
-        <img class="individualImg" onClick="bigger();" src="/img/lakevale.jpg">
-        <img class="individualImg" onClick="bigger();" src="/img/KelownaVineyard.jpg">
-        <img class="individualImg" onClick="bigger();" src="/img/Kelowna.jpeg">
-        <img class="individualImg" onClick="bigger();" src="/img/KelownaBoardwalk.jpg">
-        <img class="individualImg" onClick="bigger();" src="/img/KelownaViews.jpg">
-        <img class="individualImg" onClick="bigger();" src="/img/Henrik.jpeg">
-        <img class="individualImg" onClick="bigger();" src="/img/Noah.jpeg">
+        <img class="individualImg" alt="Snow" src="/img/lakevale.jpg">
       </div>
      
     </div>
@@ -53,6 +37,18 @@
     <!-- <div id="allGalleryImages">
       <img class="galleryImage" src="/img/lakevale.jpg">
     </div> -->
+
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+    
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+    
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
 
     <%- include('partials/_footer') %>
 
@@ -64,11 +60,33 @@
       //   // $('.testing').css("height","70%");
       // }
 
+      // Get the modal
+      var modal = document.getElementsById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementsByClassName("individualImg");
+      console.log("IMG: ", img)
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
 
       // probably need to use toggleClass...
-      const bigger = function() {
-        $('.individualImg').toggleClass('individualImg enlargedImg');
-      }
+      // const bigger = function() {
+      //   $('.individualImg').toggleClass('individualImg enlargedImg');
+      // }
 
 
     </script>
