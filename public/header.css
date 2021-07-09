@@ -3,7 +3,10 @@
   flex-direction: column;
   align-items: center;
   z-index: 1;
-  /* position: fixed; */
+  /* position: sticky; */
+  position: fixed;
+  top: 0;
+  width: 100%;
   /* top: 0;  */
 }
 
@@ -100,13 +103,8 @@
   /* position: absolute; */
   display: flex;
   flex-direction: row;
-
-
   /* justify-content: flex-start; */
   align-self: center;
-
-
-
 } 
 
 #homeButton:hover {
@@ -116,7 +114,6 @@
 #smallLogo {
   /* display: flex; */
   /* justify-self:left; */
-
   width: 1.5em;
   height: auto;
 }

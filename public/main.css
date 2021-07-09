@@ -128,17 +128,21 @@
   cursor: pointer;
 }
 
+#dropdownButton:hover {
+  opacity: .95;
+}
+
 #container {
   display: flex;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
 }
 
 #mainLogo {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  width: 40em;
+  width: 50%;
   height: auto;
   transform: translate(-50%, -50%);
 }
